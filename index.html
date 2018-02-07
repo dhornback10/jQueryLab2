@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQueryLab1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:700" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Table Finder</h1>
+        <p>Pick your table now</p>
+    </header>
+    <div id="formDiv">
+        <form>
+            <button type="button" class="cancelButton">X</button>
+            <h3>New Reservation</h3>
+            <p id="tableNumber">Table Number: <span class="num"></span></p>
+            <input id="nameInput" type="text" name="Name" placeholder="Name">
+            <input id="phoneInput" type="text" name="Phone Number" placeholder="Phone Number">
+            <input id="guestInput" type="number" name="Guests" placeholder="Number of Guests">
+            <button type="submit" class="saveButton">Save</button>
+        </form>
+    </div>
+    <div id="tablesDiv">
+        <div id="row1" class="group">
+            <div id="1" class="circles available">1</div>
+            <div id="2" class="circles available">2</div>
+            <div id="3" class="circles available">3</div>
+        </div>
+        <div id="row2" class="group">
+            <div id="4" class="circles available">4</div>
+            <div id="5" class="circles available">5</div>
+            <div id="6" class="circles available">6</div>
+        </div>
+        <div id="row3" class="group">
+            <div id="7" class="circles available">7</div>
+            <div id="8" class="circles available">8</div>
+            <div id="9" class="circles available">9</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="JScript.js"></script>
+</body>
+
+</html>

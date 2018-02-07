@@ -1,0 +1,152 @@
+        body {
+        background-color: #E1D7D4;
+        text-align: center;
+        font-family: Roboto Mono, monospace;
+    }
+
+    h1,
+    h3 {
+        font-family: Rubik, sans-serif;
+        font-weight: bold;
+        color: #E34E45;
+    }
+
+    #formDiv {
+        width: 40%;
+        height: 300px;
+        position: fixed;
+        z-index: 2;
+        background-color: white;
+        margin: 30px auto;
+        margin-left: 29%;
+        box-shadow: 0px 0px 31px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    form {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 25px auto;
+        width: 75%;
+    }
+
+    form button.saveButton {
+        width: 100%;
+        background-color: #008000;
+        color: white;
+        margin-top: 50px;
+        padding: 10px;
+        box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    form button.cancelButton {
+        position: absolute;
+        margin-top: 0px;
+        margin-left: 70%;
+        border: none;
+    }
+
+    .cancelButton:hover {
+        background-color: lightgrey;
+    }
+
+    form p {
+        font-size: 12px;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid lightgrey;
+        margin: 5px;
+    }
+
+
+    #tablesDiv {
+        background-color: white;
+        width: 50%;
+        height: 500px;
+        margin: 40px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .group {
+        width: 100%;
+        display: flex;
+        align-content: flex-start;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .circles {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    .available {
+        background-color: #EEE;
+        color: #ADAAAA;
+    }
+
+    .available:hover {
+        box-shadow: 1.5px 1.5px 3px 3px lightgrey;
+    }
+
+    .reserved {
+        background-color: #ADAAAA;
+        color: #CCC;
+        cursor: not-allowed;
+    }
+
+    .hover {
+        /*should be .hoverData*/
+        display: none;
+        margin-top: -10px auto;
+        background-color: #ADAAAA;
+        color: black;
+        position: fixed;
+        z-index: 1;
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 5%;
+        height: 60px;
+        line-height: initial;
+    }
+
+    .hover p {
+        font-size: 10px;
+        padding: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .reserved:hover .hover {
+        display: block;
+    }
+
+    @media only screen and (max-width: 768px) {
+        #tablesDiv {
+            background-color: white;
+            width: 80%;
+        }
+        .circles {
+            width: 70px;
+            height: 70px;
+            border-radius: 70px;
+            text-align: center;
+            line-height: 70px;
+        }
+        #formDiv {
+            width: 60%;
+            height: 400px;
+            margin: 10px auto;
+            margin-left: 20%;
+        }
+        .hover {
+            width: 15%;
+            height: 80px;
+            line-height: initial;
+        }
